@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_image"
+    android:orientation="vertical"
+    tools:context="com.example.android.workouttracker.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/burning_welcome"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ProgressBar
+            android:id="@+id/progressCircle"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"
+            android:max="10000"
+            android:progress="2000"
+            android:progressDrawable="@drawable/progress_circle" />
+
+        <TextView
+            style="@style/MainTextStyle"
+            android:id="@+id/progressText"
+            tools:text="1000 kcal" />
+
+        <TextView
+            style="@style/MainTextStyle"
+            android:id="@+id/percentText"
+            android:layout_below="@id/progressText"
+            tools:text="10%" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/goto_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/basic_padding"
+            android:text="@string/goto_button"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

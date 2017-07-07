@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WorkoutTracker</string>
+    <string name="intensity_low">Low</string>
+    <string name="intensity_medium">Medium</string>
+    <string name="intensity_high">High</string>
+    <string name="workout_name">Workout name:</string>
+    <string name="workout_time">Workout name:</string>
+    <string name="workout_intensity">Workout intensity:</string>
+    <string name="time_unit">min</string>
+    <string name="energy_unit">kcal</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="burning_welcome">You have burnt</string>
+    <string name="goto_button">Go to my workouts</string>
+    <string name="percent_text">% of 10.000 kcal</string>
+    <string name="missing_error">Missing name or time!</string>
+    <string name="save_error">Are you sure you do not want to save your workout?</string>
+    <string name="dialog_ok">Yes, I want to quit!</string>
+    <string name="dialog_cancel">No, I forgot something!</string>
+    <string name="save_success">Workout successfully saved!</string>
+    <string name="delete_success">Workout successfully deleted!</string>
+    <string name="all_delete_success">All workouts successfully deleted!</string>
+    <string name="empty_text">To add a workout, tap on the plus icon!</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These are the options displayed in the gender drop-down Spinner -->
+    <string-array name="intensity_options">
+        <item>@string/intensity_low</item>
+        <item>@string/intensity_medium</item>
+        <item>@string/intensity_high</item>
+    </string-array>
+</resources>

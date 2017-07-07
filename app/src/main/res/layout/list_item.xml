@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/basic_padding">
+
+    <ImageView
+        android:id="@+id/workout_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_low"
+        android:layout_marginRight="@dimen/basic_padding"
+        android:layout_marginTop="@dimen/half_padding"
+        android:background="@drawable/workout_circle"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ListItemTextStyle"
+            android:id="@+id/workout_name"
+            android:paddingBottom="@dimen/half_padding"
+            tools:text="Running" />
+
+        <TextView
+            android:id="@+id/workout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            tools:text="30min" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/zero"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/ListItemTextStyle"
+            android:id="@+id/workout_calories"
+            android:textAlignment="textEnd"
+            tools:text="400 kcal" />
+
+    </LinearLayout>
+
+</LinearLayout>
